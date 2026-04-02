@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anonymous Messaging Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-a"></div>
+    <div class="bg-orb orb-b"></div>
+
+    <main class="layout">
+      <header class="hero">
+        <p class="eyebrow">Onion Routing Simulation</p>
+        <h1>Anonymous Messaging Network</h1>
+        <p class="subtitle">
+          Control the C++ backend, send a message through random relays, and watch each hop peel one encryption layer.
+        </p>
+      </header>
+
+      <section class="panel input-panel">
+        <h2>Send Message</h2>
+        <form id="send-form">
+          <label for="message-input">Message</label>
+          <input
+            id="message-input"
+            name="message"
+            type="text"
+            maxlength="240"
+            value="HELLO"
+            placeholder="Enter message payload"
+            required
+          />
+
+          <label for="hop-input">Hops (1-5)</label>
+          <div class="hop-row">
+            <input id="hop-input" name="hops" type="range" min="1" max="5" value="3" />
+            <span id="hop-value">3</span>
+          </div>
+          <p class="hint">Core backend requires at least 3 hops. Lower values are auto-adjusted.</p>
+
+          <button id="send-button" type="submit">Send Anonymous Message</button>
+        </form>
+      </section>
+
+      <section class="panel status-panel">
+        <h2>Delivery Status</h2>
+        <div class="status-card" id="status-card">
+          <span class="status-dot" id="status-dot"></span>
+          <div>
+            <p class="status-label" id="status-label">Idle</p>
+            <p class="status-meta" id="status-meta">Awaiting request</p>
+          </div>
+        </div>
+        <p class="delivered-message" id="delivered-message"></p>
+      </section>
+
+      <section class="panel route-panel">
+        <h2>Selected Route</h2>
+        <div id="route-track" class="route-track">
+          <div class="route-empty">Route will appear after sending.</div>
+        </div>
+      </section>
+
+      <section class="panel logs-panel">
+        <h2>Live Hop Logs</h2>
+        <div id="log-list" class="log-list"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

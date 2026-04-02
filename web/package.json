@@ -1,0 +1,13 @@
+{
+  "name": "anonymous-network-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Web control and visualization layer for the C++ anonymous messaging network",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

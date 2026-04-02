@@ -1,0 +1,13 @@
+[2026-03-31 20:31:37] [INFO] [CLIENT] Selected route:
+[2026-03-31 20:31:37] [INFO] [CLIENT]   hop 1: 127.0.0.1:9002
+[2026-03-31 20:31:37] [INFO] [CLIENT]   hop 2: 127.0.0.1:9001
+[2026-03-31 20:31:37] [INFO] [CLIENT]   hop 3: 127.0.0.1:9003
+[2026-03-31 20:31:37] [INFO] [CLIENT]   final: 127.0.0.1:9100
+[2026-03-31 20:31:37] [INFO] [CLIENT] Wrapping layer for 127.0.0.1:9003 -> next=127.0.0.1:9100, plaintext layer=00 0e 31 32 37 2e 30 2e 30 2e 31 3a 39 31 30 30 00 00 00 05 48 45 4c 4c ... (19 bytes)
+[2026-03-31 20:31:37] [INFO] [CLIENT] Encrypted layer for 127.0.0.1:9003 => 63 66 50 40 5b 47 55 71 5b 4b 48 59 51 50 42 5c 69 65 5f 6e 2d 3c 2f 24 ... (19 bytes)
+[2026-03-31 20:31:37] [INFO] [CLIENT] Wrapping layer for 127.0.0.1:9001 -> next=127.0.0.1:9003, plaintext layer=00 0e 31 32 37 2e 30 2e 30 2e 31 3a 39 30 30 33 00 00 00 19 63 66 50 40 ... (2d bytes)
+[2026-03-31 20:31:37] [INFO] [CLIENT] Encrypted layer for 127.0.0.1:9001 => 61 62 41 5a 56 71 5b 4b 49 4f 5d 4a 51 51 6f 58 65 79 61 75 13 0e 31 1f ... (2d bytes)
+[2026-03-31 20:31:37] [INFO] [CLIENT] Wrapping layer for 127.0.0.1:9002 -> next=127.0.0.1:9001, plaintext layer=00 0e 31 32 37 2e 30 2e 30 2e 31 3a 39 30 30 31 00 00 00 2d 61 62 41 5a ... (41 bytes)
+[2026-03-31 20:31:37] [INFO] [CLIENT] Encrypted layer for 127.0.0.1:9002 => 62 7c 50 44 58 71 5b 4b 49 4c 43 5b 4f 5f 6f 5a 65 79 62 5f 00 14 2e 05 ... (41 bytes)
+[2026-03-31 20:31:37] [INFO] [CLIENT] Outermost onion payload preview: 62 7c 50 44 58 71 5b 4b 49 4c 43 5b 4f 5f 6f 5a 65 79 62 5f 00 14 2e 05 ... (41 bytes)
+[2026-03-31 20:31:37] [INFO] [CLIENT] Anonymous message dispatched to first hop 127.0.0.1:9002
