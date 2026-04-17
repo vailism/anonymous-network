@@ -1,5 +1,16 @@
 # Anonymous Messaging Network (C++17)
+# 🧅 Anonymous Messaging Network (C++17)
 
+> Tor-inspired multi-hop anonymous communication system with onion routing and real-time web visualization
+
+---
+
+## 🚀 Key Features
+- Multi-hop anonymous routing over TCP
+- Onion-layer encryption model
+- Fully concurrent relay nodes using threads
+- Modular C++ architecture (client, node, server)
+- Web dashboard for control + visualization
 A production-style local simulation of onion routing concepts (Tor-inspired, simplified for academic use).
 
 ## What This Project Demonstrates
@@ -9,6 +20,22 @@ A production-style local simulation of onion routing concepts (Tor-inspired, sim
 - Each relay knows only its previous connection and next hop
 - Final receiver obtains plaintext message only after all layers are peeled
 - Concurrent node and server handling using `std::thread`
+
+## 💡 Why This Project Matters
+This project demonstrates low-level networking, concurrency, and distributed system design by implementing a simplified onion routing protocol similar to Tor.
+
+It highlights:
+- Privacy-preserving communication concepts
+- Layered encryption design
+- Real-world system architecture simulation
+
+## 🛠 Tech Stack
+- C++17 (core networking + threading)
+- POSIX sockets (TCP communication)
+- std::thread (concurrency)
+- Node.js (web dashboard backend)
+- HTML/CSS/JS (frontend)
+- CMake (build system)
 
 ## Project Structure
 
